@@ -102,14 +102,14 @@ class 数据爬取:
         self.session.close()
 
 
-##test
-file = 'C:\\Users\\ZhangSSD\\Desktop\\预测\\'
-name = '历史开奖数据.csv'
-k = 数据爬取()
-#文件不存在时，爬取前3000条
-data = k.按条爬取(3000)
-data.to_csv(file+name)
-#文件存在时，补齐最新缺失部分
-data = k.数据补齐(file+name)
-print(data)
-k.close()
+# ##test
+# file = '/Users/zhangxuewei/Desktop/MachineLearning_py35/'
+# name = '历史开奖数据.csv'
+# k = 数据爬取()
+# #文件不存在时，爬取前3000条
+# data = k.按条爬取(300)
+# data.to_csv(file+name)
+# #文件存在时，补齐最新缺失部分
+# data = k.数据补齐(file+name)
+# print(data)
+# k.close()
