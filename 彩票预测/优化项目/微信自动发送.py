@@ -14,7 +14,7 @@ pred.算法 = 1
 投注状态 = 0
 实时跟踪 = 1
 #
-file = '/Users/zhangxuewei/Desktop/MachineLearning_py35/'
+file = 'C:\\Users\\30708\\Desktop\\预测\\'
 name = '历史开奖数据.csv'
 pred.file = file
 #
@@ -23,9 +23,9 @@ itchat.auto_login(hotReload=True)
 #
 自己 = itchat.search_friends(name='江清月近人')[0].UserName
 另一个号 = itchat.search_friends(name='叫什么名字好zxw')[0].UserName
-指定群 = itchat.search_chatrooms(name='🔥诚信天下🔥1号开启')[0].UserName
-执行词  = '★诚信天下1号开启★【【【开始竞猜】】】'
-指定执行人 = '闵俊良'
+指定群 = itchat.search_chatrooms(name='🔥诚信天下🔥2号开启')[0].UserName
+执行词  = '★诚信天下2号开启★【【【开始竞猜】】】'
+指定执行人 = '梁乐正'
 #
 #读取消息
 @itchat.msg_register(msgType='Text',isGroupChat=True,isFriendChat=True)
