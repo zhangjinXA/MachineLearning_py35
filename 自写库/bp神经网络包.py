@@ -36,11 +36,11 @@ class bp神经网络:
         ###
         self.__x0,self.__x,self.y = x0,x,y
         self.__param_for_bp()
-        # plot
-        # plt.xlim(np.min(x0), np.max(x0))
-        # plt.ylim(np.min(y), np.max(y) + np.min(y) / 5)
-        # ax.plot(x0, y, marker='o')
-        # plt.pause(0.1)
+        plot
+        plt.xlim(np.min(x0), np.max(x0))
+        plt.ylim(np.min(y), np.max(y) + np.min(y) / 5)
+        ax.plot(x0, y, marker='o')
+        plt.pause(0.1)
     #定义w1,w2
     def __param_for_bp(self):
         w1_np = np.random.rand(self.输入神经元个数 * self.隐层神经元数) ; w1_np.shape = self.输入神经元个数, self.隐层神经元数

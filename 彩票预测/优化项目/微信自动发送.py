@@ -23,13 +23,19 @@ itchat.auto_login(hotReload=True)
 #
 自己 = itchat.search_friends(name='江清月近人')[0].UserName
 另一个号 = itchat.search_friends(name='叫什么名字好zxw')[0].UserName
-指定群 = itchat.search_chatrooms(name='🔥诚信天下🔥2号开启')[0].UserName
-执行词  = '★诚信天下2号开启★【【【开始竞猜】】】'
-指定执行人 = '梁乐正'
+#
+所有群 =  itchat.get_chatrooms()
+for i in 所有群:
+    print(i.NickName)
+#
+指定群 = itchat.search_chatrooms(name='🐯诚信天下🐯3开启')[0].UserName
+执行词  = '★诚信天下3开启★【【【开始竞猜】】】'
+指定执行人 = '刘安澜'
 #
 #读取消息
 @itchat.msg_register(msgType='Text',isGroupChat=True,isFriendChat=True)
 def text_reply(msg):
+
     global 投注状态,实时跟踪
     if msg.FromUserName == 自己:
         text = msg.text; print(text)
