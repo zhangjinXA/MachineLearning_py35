@@ -5,7 +5,7 @@ import numpy as np
 
 
 file ='C:\\Users\\30708\\Desktop\\活儿\\2017-6-3 聚类\\'
-name = '打标签.xls'
+name = 'qq_格式转换.xlsx'
 n_clusters = 5  #分类数目
 
 
